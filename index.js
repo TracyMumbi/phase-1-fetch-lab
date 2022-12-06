@@ -11,11 +11,10 @@ function renderBooks(books) {
     const h2 = document.createElement('h2');
     h2.innerHTML = book.name;
     main.appendChild(h2);
-    fetchBooks('https://anapioficeandfire.com/api/books')
+    fetchBooks()
   });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks('https://anapioficeandfire.com/api/books');
   
 });
